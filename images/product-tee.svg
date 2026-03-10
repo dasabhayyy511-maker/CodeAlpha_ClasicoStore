@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 760">
+  <rect width="640" height="760" fill="#f5e9da"/>
+  <rect x="50" y="50" width="540" height="660" rx="28" fill="#fff8f0"/>
+  <path d="M190 180l78-50h104l78 50-36 88-52-31v283H278V237l-52 31z" fill="#c9a27e"/>
+  <text x="320" y="420" text-anchor="middle" font-size="46" fill="#3e2c23" font-family="Georgia, serif">CLASICO</text>
+</svg>

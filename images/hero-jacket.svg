@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 900">
+  <rect width="800" height="900" fill="#f5e9da"/>
+  <rect x="65" y="60" width="670" height="780" rx="38" fill="#fff8f0"/>
+  <path d="M250 220h300l80 120-60 390H230L170 340z" fill="#6b4f3a"/>
+  <path d="M325 220h150v125H325z" fill="#e8d5c4"/>
+  <path d="M275 385h250" stroke="#c9a27e" stroke-width="12" stroke-linecap="round"/>
+  <path d="M285 460h230" stroke="#c9a27e" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="400" cy="160" r="55" fill="#c9a27e"/>
+  <text x="400" y="812" text-anchor="middle" font-size="44" fill="#3e2c23" font-family="Georgia, serif">CLASICO LOOK</text>
+</svg>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop | CLASICO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="shop">
+    <header class="site-header">
+      <nav class="navbar container">
+        <a class="brand" href="index.html">
+          <span class="brand-name">CLASICO</span>
+          <span class="brand-tagline">Timeless Streetwear</span>
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="shop.html" class="active">Shop</a>
+          <a href="cart.html">Cart <span class="nav-count" id="cartCount">0</span></a>
+          <a href="login.html">Login</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-banner">
+      <section class="container">
+        <p class="eyebrow">Shop</p>
+        <h1>Discover the full CLASICO collection.</h1>
+        <p class="banner-text">
+          Clean cuts, vintage shades, and modern streetwear basics all in one place.
+        </p>
+      </section>
+
+      <section class="section container">
+        <div class="filters-bar">
+          <button class="filter-button active" data-category="All">All</button>
+          <button class="filter-button" data-category="Vintage Tees">Vintage Tees</button>
+          <button class="filter-button" data-category="Denim Jackets">Denim Jackets</button>
+          <button class="filter-button" data-category="Retro Hoodies">Retro Hoodies</button>
+          <button class="filter-button" data-category="Accessories">Accessories</button>
+        </div>
+        <div class="product-grid" id="shopProducts"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <div>
+          <span class="brand-name">CLASICO</span>
+          <p>Timeless Streetwear</p>
+        </div>
+        <p>Replace the demo product photos inside the images folder with your own clothing photos.</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

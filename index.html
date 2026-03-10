@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CLASICO | Timeless Streetwear</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="home">
+    <header class="site-header">
+      <nav class="navbar container">
+        <a class="brand" href="index.html">
+          <span class="brand-name">CLASICO</span>
+          <span class="brand-tagline">Timeless Streetwear</span>
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" id="navLinks">
+          <a href="index.html" class="active">Home</a>
+          <a href="shop.html">Shop</a>
+          <a href="cart.html">Cart <span class="nav-count" id="cartCount">0</span></a>
+          <a href="login.html">Login</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Vintage Inspired Streetwear</p>
+            <h1>Timeless Fashion, Reworked For The Modern Street.</h1>
+            <p class="hero-text">
+              CLASICO blends vintage cuts, soft earthy tones, and premium streetwear
+              essentials into one clean retro collection.
+            </p>
+            <div class="hero-actions">
+              <a href="shop.html" class="btn btn-primary">Shop Now</a>
+              <a href="#featured" class="btn btn-secondary">Explore Collection</a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="hero-card hero-card-main">
+              <img src="images/hero-jacket.svg" alt="Vintage jacket showcase" />
+            </div>
+            <div class="hero-card hero-card-top">
+              <img src="images/hero-tee.svg" alt="Retro tee showcase" />
+            </div>
+            <div class="hero-card hero-card-bottom">
+              <img src="images/hero-hoodie.svg" alt="Classic hoodie showcase" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="trust-strip">
+        <div class="container trust-grid">
+          <div>
+            <strong>Premium Fabrics</strong>
+            <span>Crafted for comfort and durability</span>
+          </div>
+          <div>
+            <strong>Warm Retro Palette</strong>
+            <span>Vintage tones with modern styling</span>
+          </div>
+          <div>
+            <strong>Streetwear Essentials</strong>
+            <span>Built for daily wear and layering</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container" id="featured">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Featured Products</p>
+            <h2>Curated pieces that define the CLASICO mood.</h2>
+          </div>
+          <a href="shop.html" class="text-link">View all products</a>
+        </div>
+        <div class="product-grid" id="featuredProducts"></div>
+      </section>
+
+      <section class="section categories-section">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Shop By Category</p>
+              <h2>Soft neutrals, clean silhouettes, and heritage layering.</h2>
+            </div>
+          </div>
+          <div class="categories-grid">
+            <article class="category-card">
+              <h3>Vintage Tees</h3>
+              <p>Graphic-driven basics with worn-in character.</p>
+            </article>
+            <article class="category-card">
+              <h3>Denim Jackets</h3>
+              <p>Structured layers designed for all-season fits.</p>
+            </article>
+            <article class="category-card">
+              <h3>Retro Hoodies</h3>
+              <p>Comfort-led staples with premium finishing.</p>
+            </article>
+            <article class="category-card">
+              <h3>Accessories</h3>
+              <p>Final touches that complete the vintage story.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <div>
+          <span class="brand-name">CLASICO</span>
+          <p>Timeless Streetwear</p>
+        </div>
+        <p>Internship project e-commerce website built with HTML, CSS, JavaScript, Express, and MongoDB.</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <rect width="500" height="500" rx="36" fill="#fff8f0"/>
+  <path d="M135 135l70-50h90l70 50-38 78-42-28v205H215V185l-42 28z" fill="#c9a27e"/>
+  <circle cx="250" cy="132" r="32" fill="#f5e9da"/>
+  <text x="250" y="445" text-anchor="middle" font-size="28" fill="#3e2c23" font-family="Georgia, serif">RETRO TEE</text>
+</svg>

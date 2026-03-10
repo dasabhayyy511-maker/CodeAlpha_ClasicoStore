@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart | CLASICO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="cart">
+    <header class="site-header">
+      <nav class="navbar container">
+        <a class="brand" href="index.html">
+          <span class="brand-name">CLASICO</span>
+          <span class="brand-tagline">Timeless Streetwear</span>
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="shop.html">Shop</a>
+          <a href="cart.html" class="active">Cart <span class="nav-count" id="cartCount">0</span></a>
+          <a href="login.html">Login</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="section">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Your Cart</p>
+            <h1>Review your selected items before checkout.</h1>
+          </div>
+        </div>
+        <div class="cart-layout">
+          <div class="cart-items" id="cartItems"></div>
+          <aside class="cart-summary">
+            <h3>Order Summary</h3>
+            <div class="summary-row">
+              <span>Items</span>
+              <span id="summaryCount">0</span>
+            </div>
+            <div class="summary-row">
+              <span>Total</span>
+              <strong id="summaryTotal">$0</strong>
+            </div>
+            <button class="btn btn-primary btn-block" id="checkoutButton">Checkout</button>
+            <p class="summary-note">
+              Checkout stores the order in MongoDB using the logged-in email.
+            </p>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <div>
+          <span class="brand-name">CLASICO</span>
+          <p>Timeless Streetwear</p>
+        </div>
+        <p>Cart includes product, price, quantity, total, and checkout as required in the assignment.</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
