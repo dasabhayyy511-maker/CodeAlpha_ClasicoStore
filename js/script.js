@@ -459,6 +459,25 @@ function updateLoggedInState() {
   loginLinks.forEach((link) => {
     link.textContent = user ? user.name.split(" ")[0] : "Login"
   })
+
+  document.querySelectorAll(".logout-link").forEach((button) => button.remove())
+
+  if (!user) return
+
+  const navLinks = document.getElementById("navLinks")
+  if (!navLinks) return
+
+  const logoutButton = document.createElement("button")
+  logoutButton.type = "button"
+  logoutButton.className = "logout-link"
+  logoutButton.textContent = "Logout"
+  logoutButton.addEventListener("click", handleLogout)
+  navLinks.appendChild(logoutButton)
+}
+
+function handleLogout() {
+  localStorage.removeItem("clasico_user")
+  window.location.href = "index.html"
 }
 
 async function handleCheckout() {
