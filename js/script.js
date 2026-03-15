@@ -101,6 +101,25 @@ function initializeMobileMenu() {
   })
 }
 
+async function parseApiResponse(response) {
+  const rawText = await response.text()
+  let data = {}
+
+  if (rawText) {
+    try {
+      data = JSON.parse(rawText)
+    } catch (_error) {
+      data = { message: "The server returned an unexpected response." }
+    }
+  }
+
+  if (!response.ok) {
+    throw new Error(data.message || "Something went wrong. Please try again.")
+  }
+
+  return data
+}
+
 async function fetchProducts() {
   try {
     const response = await fetch("/api/products")
@@ -416,8 +435,7 @@ function initializeAuthPage() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload)
       })
-      const data = await response.json()
-      if (!response.ok) throw new Error(data.message)
+      const data = await parseApiResponse(response)
 
       localStorage.setItem("clasico_user", JSON.stringify(data.user))
       authMessage.textContent = data.message
@@ -440,8 +458,7 @@ function initializeAuthPage() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload)
       })
-      const data = await response.json()
-      if (!response.ok) throw new Error(data.message)
+      const data = await parseApiResponse(response)
 
       localStorage.setItem("clasico_user", JSON.stringify(data.user))
       authMessage.textContent = data.message
@@ -507,8 +524,7 @@ async function handleCheckout() {
         totalAmount
       })
     })
-    const data = await response.json()
-    if (!response.ok) throw new Error(data.message)
+    const data = await parseApiResponse(response)
 
     localStorage.removeItem("clasico_cart")
     updateCartCount()
